@@ -1,0 +1,30 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "First nodejs project",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon --inspect ./main.js localhost 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/congnghiahieu/testnodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "firstnodejs"
+  ],
+  "author": "hieucien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/congnghiahieu/testnodejs/issues"
+  },
+  "homepage": "https://github.com/congnghiahieu/testnodejs#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
