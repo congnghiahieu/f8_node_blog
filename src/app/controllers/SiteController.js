@@ -1,7 +1,16 @@
+const Course = require('../models/Course');
+const { mongooseArraysToObjects } = require('../../util/mongoose');
+
 class SiteController {
     // [GET] /
-    index(req, res) {
-        res.render('home');
+    index(req, res, next) {
+        Course.find({})
+            .then((courses) => {
+                res.render('home', {
+                    courses: mongooseArraysToObjects(courses),
+                });
+            })
+            .catch((err) => next(err));
     }
 
     // [GET] /search
